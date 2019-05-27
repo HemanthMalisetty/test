@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name=" BVT Test" allow-return-values="true"
+	parallel="classes" thread-count="1" data-provider-thread-count="80"
+	preserve-order="true">
+	<!-- <listeners> <listener class-name="testNGReport.Listener" /> <listener 
+		class-name="testNGReport.iReporter" /> </listeners> -->
+	<listeners>
+		<listener class-name="com.report.AnnotationTransformer"/>
+	</listeners>
+	<test name="Little Passport Service Execution"
+		preserve-order="true">
+
+		<classes>
+
+
+			<class name="com.test.subscriptionManagementSystem">
+				<methods>
+					<exclude name="renewUserSubscription"></exclude>
+					<!-- <include name="updateCatlogSubscriptionDetails"></include>  -->
+				</methods>  
+				
+			</class>
+		</classes>
+
+	</test>
+</suite> 

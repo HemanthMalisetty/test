@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" data-provider-thread-count="80" name="Failed suite [ BVT Test]" guice-stage="DEVELOPMENT" allow-return-values="true">
+  <test parallel="classes" name="Little Passport Service Execution(failed)">
+    <classes>
+      <class name="com.test.testclass">
+        <methods>
+          <include name="Test2"/>
+          <include name="Test1"/>
+        </methods>
+      </class> <!-- com.test.testclass -->
+    </classes>
+  </test> <!-- Little Passport Service Execution(failed) -->
+</suite> <!-- Failed suite [ BVT Test] -->
